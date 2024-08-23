@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.2.1'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
+gem 'rails', '~> 7.2.0', '>= 7.0.4.3'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
@@ -58,7 +58,7 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   # gem 'devise'
   gem 'rails-controller-testing'
-  gem 'rspec-rails', '~> 6.0.0'
+  gem 'rspec-rails', '~> 6.0.4'
   gem 'webdrivers'
 end
 
@@ -83,3 +83,31 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'selenium-webdriver'
 end
+
+gem 'activestorage', '~> 7.2.0'
+
+gem 'actionpack', '~> 7.2.0'
+
+gem 'rexml', '~> 3.3.3'
+
+gem 'actioncable', '~> 7.2.0'
+
+gem 'actiontext', '~> 7.2.0'
+
+gem 'rack-test', '~> 2.1.0'
+
+gem 'responders', '~> 3.1.1'
+
+gem 'nokogiri', '~> 1.16.5'
+
+gem 'actionmailer', '~> 7.2.0'
+
+gem 'railties', '~> 7.2.0'
+
+gem 'sprockets', '~> 4.2.1'
+
+gem 'rack', '~> 3.0.9.1'
+
+gem 'warden', '~> 1.2.9'
+
+gem 'actionmailbox', '~> 7.2.0'
