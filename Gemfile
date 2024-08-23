@@ -1,14 +1,6 @@
-source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-
-ruby '3.2.1'
-
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
-
-# The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem 'sprockets-rails'
-
+gem 'rails', '~> 7.2.0'
+, github: "rails/rails", branch: "main"
+gem 'rails', '~> 7.0.4'gem 'sprockets-rails', '~> 3.4.2'
 gem 'devise'
 
 # Use postgresql as the database for Active Record
@@ -17,19 +9,16 @@ gem 'pg', '~> 1.1'
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
 
-# Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-gem 'importmap-rails'
-
-# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem 'turbo-rails'
-
+gem 'importmap-rails', '~> 2.0.1'
+gem 'turbo-rails', '~> 1.5.0'
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'stimulus-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
-gem 'rubocop', '>= 1.0', '< 2.0'
+gem 'rubocop', '~> 1.59.0'
+, '< 2.0'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -52,14 +41,12 @@ gem 'bootsnap', require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'capybara'
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
+gem 'capybara', '~> 3.39.2'
+gem 'debug', platforms: %i[mri mingw x64_mingw]
   # gem 'devise'
-  gem 'rails-controller-testing'
-  gem 'rspec-rails', '~> 6.0.0'
-  gem 'webdrivers'
+  gem 'rails-controller-testing', '~> 1.0.5'
+gem 'rspec-rails', '~> 6.0.4'
+gem 'webdrivers'
 end
 
 group :development do
@@ -77,9 +64,33 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+gem 'selenium-webdriver', '~> 4.16.0'
 end
 
-group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'selenium-webdriver'
-end
+gem 'activestorage', '~> 7.2.0'
+
+gem 'actionpack', '~> 7.2.0'
+
+gem 'rexml', '~> 3.3.3'
+
+gem 'actioncable', '~> 7.2.0'
+
+gem 'actiontext', '~> 7.2.0'
+
+gem 'rack-test', '~> 2.1.0'
+
+gem 'responders', '~> 3.1.1'
+
+gem 'nokogiri', '~> 1.16.5'
+
+gem 'actionmailer', '~> 7.2.0'
+
+gem 'railties', '~> 7.2.0'
+
+gem 'sprockets', '~> 4.2.1'
+
+gem 'rack', '~> 3.0.9.1'
+
+gem 'warden', '~> 1.2.9'
+
+gem 'actionmailbox', '~> 7.2.0'
